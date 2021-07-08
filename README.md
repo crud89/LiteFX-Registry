@@ -11,7 +11,8 @@ First, setup vcpkg as described [here](https://github.com/microsoft/vcpkg#using-
   "name": "my-litefx-app",
   "version-string": "1.0",
   "supports": "windows & !arm",
-  "dependencies": [
+  "dependencies":
+  [
     {
       "name": "litefx",
       "features": [ "glm", "dx-math" ]
@@ -24,7 +25,8 @@ Since LiteFX has no official port yet, create a registry `vcpkg-configuration.js
 
 ```json
 {
-  "registries": [
+  "registries":
+  [
     {
       "kind": "git",
       "repository": "https://github.com/crud89/LiteFX-Registry",
@@ -43,7 +45,7 @@ SET(CMAKE_TOOLCHAIN_FILE "<path_to_vcpkg>/scripts/buildsystems/vcpkg.cmake")
 PROJECT(MyLiteFXApp LANGUAGES CXX)
  
 SET(CMAKE_CXX_STANDARD 20)
-FIND_PACKAGE(LiteFX 1.0 CONFIG REQUIRED)
+FIND_PACKAGE(LiteFX 0.1 CONFIG REQUIRED)
  
 ADD_EXECUTABLE(MyLiteFXApp "main.h" "main.cpp")
 TARGET_LINK_LIBRARIES(MyLiteFXApp PRIVATE LiteFX.Backends.Vulkan)   # For the DirectX 12 target use: LiteFX.Backends.DirectX12. You can also add both targets here.
