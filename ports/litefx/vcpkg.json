@@ -1,0 +1,61 @@
+{
+    "name": "litefx",
+    "version-string": "0.1.1",
+    "port-version": 1,
+    "maintainers": [
+      "Carsten Rudolph <18394207+crud89@users.noreply.github.com>"
+    ],
+    "description": "An extensible, descriptive, modern computer graphics and rendering engine.",
+    "homepage": "https://litefx.crudolph.io/",
+    "documentation": "https://litefx.crudolph.io/docs/",
+    "license": "MIT",
+    "supports": "windows & !arm",
+    "features": [
+      {
+        "name": "dx12",
+        "description": "Builds the DirectX 12 backend.",
+        "dependencies": [
+          "directx-headers",
+          "d3d12-memory-allocator"
+        ]
+      },
+      {
+        "name": "vulkan",
+        "description": "Builds the Vulkan backend.",
+        "dependencies": [
+          "vulkan",
+          "vulkan-memory-allocator"
+        ]
+      },
+      {
+        "name": "glm",
+        "description": "Builds glm converters for math types.",
+        "dependencies": [
+          "glm"
+        ]
+      },
+      {
+        "name": "dx-math",
+        "description": "Builds DirectX Math converters for math types.",
+        "dependencies": [
+          "directxmath"
+        ]
+      }
+    ],
+    "default-features": [
+      "dx12",
+      "vulkan"
+    ],
+    "dependencies": [
+      "spdlog",
+      "fmt",
+      {
+        "name": "vcpkg-cmake",
+        "host": true
+      },
+      {
+        "name": "vcpkg-cmake-config",
+        "host": true
+      }
+    ]
+  }
