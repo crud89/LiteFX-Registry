@@ -1,10 +1,9 @@
 vcpkg_from_github(
   OUT_SOURCE_PATH SOURCE_PATH
   REPO crud89/litefx
-  REF v0.1.1
-  SHA512 a682396bb85d1b0b17290146ee3cc9ae11fff6cbd3dc44c08adbbd3684af5c6f5565bc1e5a68e291da4997c9d134b012fedb6f50b003387ced4e87372beb70b3
+  REF v0.2.1
+  SHA512 d185f8378edc604ecd6b3e197bf7af0bf14a474061051ab1757193b8d169bc6b4f1e65df396a4f8f1ea99b69a5c99bbd4ee95a1f4bae2a43f972636fcd32f91e
   HEAD_REF main
-  PATCHES build-script.patch
 )
 
 vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS
