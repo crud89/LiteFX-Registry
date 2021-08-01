@@ -4,6 +4,7 @@ vcpkg_from_github(
   REF v0.2.1
   SHA512 d185f8378edc604ecd6b3e197bf7af0bf14a474061051ab1757193b8d169bc6b4f1e65df396a4f8f1ea99b69a5c99bbd4ee95a1f4bae2a43f972636fcd32f91e
   HEAD_REF main
+  PATCHES "dx12-headers.patch"
 )
 
 vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS

@@ -30,6 +30,7 @@ Since LiteFX has no official port yet, create a registry `vcpkg-configuration.js
     {
       "kind": "git",
       "repository": "https://github.com/crud89/LiteFX-Registry",
+      "baseline": "",
       "packages": [ "litefx" ]
     }
   ]
