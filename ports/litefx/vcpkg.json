@@ -1,7 +1,7 @@
 {
     "name": "litefx",
     "version-string": "0.2.1",
-    "port-version": 0,
+    "port-version": 1,
     "maintainers": [
       "Carsten Rudolph <18394207+crud89@users.noreply.github.com>"
     ],
