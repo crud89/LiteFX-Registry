@@ -30,11 +30,21 @@ Since LiteFX has no official port yet, create a registry `vcpkg-configuration.js
     {
       "kind": "git",
       "repository": "https://github.com/crud89/LiteFX-Registry",
-      "baseline": "a4d10336526c51d17df97fef2dbb08e8c96528ca",
+      "baseline": "",
       "packages": [ "litefx" ]
     }
   ]
 }
+```
+
+When you try to run `vcpkg install` on your project now, you will receive a warning similar to:
+
+> $.registries[0] (a git registry): missing required field 'baseline' (a baseline)
+
+To fix this, copy the full 40 byte SHA of the [latest commit](https://github.com/crud89/LiteFX-Registry/commits/main) of this repository into the `baseline` property of your registry file. Alternatively, run the following command to acquire the 40 byte SHA:
+
+```sh
+git ls-remote https://github.com/crud89/LiteFX-Registry.git main
 ```
 
 If you follow the [project setup guide](https://litefx.crudolph.io/docs/md_docs_tutorials_project_setup.html#autotoc_md3) guide, the `CMakeLists.txt` file now is more simple:
