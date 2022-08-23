@@ -14,8 +14,12 @@
             "git-tree": "852b68aacb2140aea81116fdd4a1376efa1ce180"
         },
         {
+            "version": "0.2.2",
+            "git-tree": "8cb6e76fdc63779435cb71c00cf5e768f141b45f"
+        },
+        {
             "version": "0.3.1",
-            "git-tree": ""
+            "git-tree": "f733d794b96e602e6fbb66591cf328067d74aeab"
         }
     ]
 }
