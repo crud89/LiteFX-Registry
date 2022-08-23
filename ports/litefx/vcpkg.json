@@ -1,7 +1,7 @@
 {
     "name": "litefx",
-    "version-string": "0.2.1",
-    "port-version": 1,
+    "version-string": "0.3.1",
+    "port-version": 0,
     "maintainers": [
       "Carsten Rudolph <18394207+crud89@users.noreply.github.com>"
     ],
@@ -10,38 +10,24 @@
     "documentation": "https://litefx.crudolph.io/docs/",
     "license": "MIT",
     "supports": "windows & !arm",
-    "features": [
-      {
-        "name": "dx12",
+    "features": {
+      "dx12": {
         "description": "Builds the DirectX 12 backend.",
-        "dependencies": [
-          "directx-headers",
-          "d3d12-memory-allocator"
-        ]
+        "dependencies": [ "directx-headers", "d3d12-memory-allocator" ]
       },
-      {
-        "name": "vulkan",
+      "vulkan": {
         "description": "Builds the Vulkan backend.",
-        "dependencies": [
-          "vulkan",
-          "vulkan-memory-allocator"
-        ]
+        "dependencies": [ "vulkan", "vulkan-memory-allocator", "spirv-reflect" ]
       },
-      {
-        "name": "glm",
+      "glm": {
         "description": "Builds glm converters for math types.",
-        "dependencies": [
-          "glm"
-        ]
+        "dependencies": [ "glm" ]
       },
-      {
-        "name": "dx-math",
+      "dx-math" : {
         "description": "Builds DirectX Math converters for math types.",
-        "dependencies": [
-          "directxmath"
-        ]
+        "dependencies": [ "directxmath" ]
       }
-    ],
+    },
     "default-features": [
       "dx12",
       "vulkan"

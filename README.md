@@ -50,13 +50,13 @@ git ls-remote https://github.com/crud89/LiteFX-Registry.git main
 If you follow the [project setup guide](https://litefx.crudolph.io/docs/md_docs_tutorials_project_setup.html#autotoc_md3) guide, the `CMakeLists.txt` file now is more simple:
 
 ```cmake
-CMAKE_MINIMUM_REQUIRED(VERSION 3.16)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.20)
 SET(CMAKE_TOOLCHAIN_FILE "<path_to_vcpkg>/scripts/buildsystems/vcpkg.cmake")
  
 PROJECT(MyLiteFXApp LANGUAGES CXX)
  
-SET(CMAKE_CXX_STANDARD 20)
-FIND_PACKAGE(LiteFX 0.1 CONFIG REQUIRED)
+SET(CMAKE_CXX_STANDARD 23)
+FIND_PACKAGE(LiteFX 0.3 CONFIG REQUIRED)
  
 ADD_EXECUTABLE(MyLiteFXApp "main.h" "main.cpp")
 TARGET_LINK_LIBRARIES(MyLiteFXApp PRIVATE LiteFX.Backends.Vulkan)   # For the DirectX 12 target use: LiteFX.Backends.DirectX12. You can also add both targets here.
