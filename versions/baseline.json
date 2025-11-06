@@ -9,7 +9,7 @@
       "port-version": 0
     },
     "litefx": {
-      "baseline": "0.4.2",
+      "baseline": "0.5.1",
       "port-version": 0
     },
     "spdlog": {

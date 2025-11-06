@@ -1,6 +1,6 @@
 {
   "name": "litefx",
-  "version": "0.4.2",
+  "version": "0.5.1",
   "maintainers": "Carsten Rudolph <18394207+crud89@users.noreply.github.com>",
   "description": "An extensible, descriptive, modern computer graphics and rendering engine.",
   "homepage": "https://litefx.crudolph.io/",
